@@ -14,172 +14,165 @@
   </head>
   <body>
     <header class="header-contenedor">
-      <nav
-        class="navbar fixed-top bg-body-tertiary navbar-expand-lg"
-        style="padding: 0"
-      >
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid header">
           <img
             src="https://media.tenor.com/WJrxtr--PCUAAAAj/workout-gym.gif"
             alt=""
             class="icono"
           />
-          <a class="navbar-brand" href="index.html">Tu  GYM</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <a class="navbar-brand" href="#">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"
-                  >Sobre Nosotros</a
-                >
+                <a class="nav-link" aria-current="page" href="#">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="404.html">Ofertas</a>
+                <a class="nav-link" href="#">Sobre Nosotros</a>
               </li>
-              <li class="nav-item dropdown boton-ingresar">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Ingresar
                 </a>
-                <ul
-                  class="dropdown-menu menu-ingresar"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#">Iniciar Sesion</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Registrate</a></li>
-                  <li><hr class="dropdown-divider" /></li>
+                <ul class="dropdown-menu menu-ingresar">
+                  <li><a class="dropdown-item" href="#">Iniciar Sesion</a></li>
+                  <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                  <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Salir</a></li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Suscribete</a>
+              </li>
+          
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn boton-buscar" type="submit"><a href="">Buscar</a></button>
+            </form>
           </div>
         </div>
       </nav>
     </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Suscribirme:</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Nombre:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Apellido:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="recipient-name" placeholder="Tugym@gmail.com">
+              </div>
+              <div class="mb-3">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Recibir Notificaciones por Email</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Registrocargado"><img src="https://cdn-icons-png.freepik.com/256/566/566372.png?ga=GA1.1.1959948065.1733925284&semt=ais_hybrid" alt="" class="ico"> Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Registrocargado" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Mensaje:</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Los datos se cargaron correctamente!!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
     <main>
-      <section class="container">
-        <article class="row">
-          <!-- Producto 1 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="container">
+        <div class="contenido">
+          <div class="card-group">
             <div class="card tamanio-tarjeta">
-              <img src="./img/star1.jpg" class="card-img-top" alt="..." />
+              <img src="https://www.proteini.si/images/b660bbaca96141dca48fc70d869a599a/1.jpg?v24?v2" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a
-                  href="./paginas/productos/producto1.html"
-                  class="btn btn-success"
-                  >Ver Mas</a
-                >
+                <h5 class="card-title">Como Ganar Masa Muscular</h5>
+                <p class="card-text">En este lugar encontraras los mejores consejos para ganar masa muscular de la mejor manera</p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target=""><img src="https://cdn-icons-png.freepik.com/256/1219/1219027.png?ga=GA1.1.1959948065.1733925284&semt=ais_hybrid" alt=" " class="ico"> ver mas</button>
+
+              </div>
+            </div>
+            <div class="card tamanio-tarjeta">
+              <img src="https://www.proteini.si/images/b660bbaca96141dca48fc70d869a599a/1.jpg?v24?v2" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Como Ganar Masa Muscular</h5>
+                <p class="card-text">En este lugar encontraras los mejores consejos para ganar masa muscular de la mejor manera</p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target=""><img src="https://cdn-icons-png.freepik.com/256/1219/1219027.png?ga=GA1.1.1959948065.1733925284&semt=ais_hybrid" alt=" " class="ico"> ver mas</button>
+
               </div>
             </div>
           </div>
-          <!-- Producto 2 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card-group">
             <div class="card tamanio-tarjeta">
-              <img src="./img/star7.avif" class="card-img-top" alt="..." />
+              <img src="https://www.proteini.si/images/b660bbaca96141dca48fc70d869a599a/1.jpg?v24?v2" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a
-                  href="./paginas/productos/producto2.html"
-                  class="btn btn-success"
-                  >Ver Mas</a
-                >
+                <h5 class="card-title">Como Ganar Masa Muscular</h5>
+                <p class="card-text">En este lugar encontraras los mejores consejos para ganar masa muscular de la mejor manera</p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target=""><img src="https://cdn-icons-png.freepik.com/256/1219/1219027.png?ga=GA1.1.1959948065.1733925284&semt=ais_hybrid" alt=" " class="ico"> ver mas</button>
+
+              </div>
+            </div>
+            <div class="card tamanio-tarjeta">
+              <img src="https://www.proteini.si/images/b660bbaca96141dca48fc70d869a599a/1.jpg?v24?v2" class="card-img-top card-imagen" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Como Ganar Masa Muscular</h5>
+                <p class="card-text">En este lugar encontraras los mejores consejos para ganar masa muscular de la mejor manera</p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target=""><img src="https://cdn-icons-png.freepik.com/256/1219/1219027.png?ga=GA1.1.1959948065.1733925284&semt=ais_hybrid" alt=" " class="ico"> ver mas</button>
+
               </div>
             </div>
           </div>
-          <!-- Producto 3 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card tamanio-tarjeta">
-              <img src="./img/star3.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a
-                  href="./paginas/productos/producto3.html"
-                  class="btn btn-success"
-                  >Ver Mas</a
-                >
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="row">
-          <!-- Producto 1 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card tamanio-tarjeta">
-              <img src="./img/star4.jpeg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-success">Ver Mas</a>
-              </div>
-            </div>
-          </div>
-          <!-- Producto 2 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card tamanio-tarjeta">
-              <img src="./img/star5.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-success">Ver Mas</a>
-              </div>
-            </div>
-          </div>
-          <!-- Producto 3 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card tamanio-tarjeta">
-              <img src="./img/star6.avif" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-success">Ver Mas</a>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
+        </div>
+        <div class="publicidad">
+          <form class="d-flex " role="search">
+            <input class="form-control me-2 buscador-cat" type="search" placeholder="Buscar" aria-label="Search">
+          </form>
+        </div>
+      </div>
+     
+      
     </main>
-    <footer class="footer footer">
-      <section class="row logo-principal justify-content-between">
+    <footer class="footer">
+      <section class="row logo-principal justify-content-between section-footer">
         <ul class="navbar-nav col-sm-12 col-md-6 col-lg-3">
           <img
             src="https://media.tenor.com/s6RkX1lnFloAAAAj/mog-mogged.gif"

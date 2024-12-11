@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 .navbar {
+  position: fixed;
+  top: 0;
   padding: 0;
 }
 .icono {
@@ -11,12 +13,8 @@
   margin: 5px;
 }
 .header {
-  background: rgb(253, 142, 45);
-  background: linear-gradient(
-    0deg,
-    rgba(253, 142, 45, 1) 1%,
-    rgba(0, 0, 0, 1) 90%
-  );
+  background: rgb(123,163,222);
+background: linear-gradient(0deg, rgba(123,163,222,1) 1%, rgba(42,30,138,1) 90%);
   margin: 0px;
   padding: 0;
   a {
@@ -31,25 +29,22 @@
 }
 
 .footer {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 1%,
-    rgba(253, 142, 45, 1) 90%
-  );
+  background: rgb(42,30,138);
+  background: linear-gradient(0deg, rgba(42,30,138,1) 1%, rgba(123,163,222,1) 90%);
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   position: relative;
-  bottom: 0;
+  bottom: 0;    
   a {
     margin: 10px;
     color: white;
     white-space: nowrap;
   }
 }
+
 .footer ul {
   margin: 5px;
   list-style: none;
@@ -83,3 +78,75 @@
     }
   }
 }
+.boton-buscar{
+a{
+  color: white;
+  text-decoration: none;
+}
+}
+
+.boton-suscribete{
+margin-right: 5px;
+  button{
+    color:white;
+    border-color: white;
+  }
+
+}
+.boton-suscribete:hover{
+    color:grey;
+    border-color: grey;
+}
+.icono-suscribete{
+  width: 20px;
+  margin: 5px;
+}
+.modal{
+img{
+  width: 20px;
+}
+}
+.container{
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+}
+.boton-ver-mas{
+border-radius: 1%;
+  a{
+    text-decoration: none;
+  }
+  img{
+    width: 20px;
+    margin: 2px;
+  }
+  }
+.card-footer{
+
+  img{
+    width: 20px;
+    margin: 2px;
+  }
+}
+
+.tamanio-tarjeta {
+  width: 18rem;
+  margin: 10px;
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .media-form {
+    width: 100%;
+  }
+
+  .tamanio-tarjeta {
+    width: 100%;
+  }
+}
+.card-imagen{
+  height: 100%;
+  object-fit: cover;
+}
+
