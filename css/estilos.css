@@ -133,7 +133,14 @@ border-radius: 1%;
   margin: 10px;
   img{
     max-width: 100%;
-    max-height: 100%;
+    max-height: 60%;
+  }
+}
+.zumba{
+  img{
+    max-width: 100%;
+    max-height: 50%;
+    
   }
 }
 @media (max-width: 500px) {
@@ -144,9 +151,26 @@ border-radius: 1%;
   .tamanio-tarjeta {
     width: 100%;
   }
+  .carrusel-publicidad{
+    display: none;
+  }
+  .buscador-cat{
+    position: fixed;
+    
+  }
 }
 .card-imagen{
   height: 100%;
   object-fit: cover;
+}
+.buscador-cat{
+  width: 1000px;
+
+}
+.carrusel-publicidad{
+  margin: 10px;
+  position:relative;
+  width: 300px;
+  max-height: 100%;
 }
 
