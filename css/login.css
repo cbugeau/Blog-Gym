@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  .formulario-iniciar-sesion{
+    padding: 20px;
+    border:solid rgb(204, 204, 204);
+    border-radius:50px;
+    width: 50%;
+    margin-left: 25%;
+    label{
+        color: white;
+    }
+    button{
+        
+      
+    }
+  }
+  .Container-botones{
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+   
+  }
+  .btn-guardar{
+    margin-left: 20%;
+  }
+  .btn-cerrar{
+    margin-right: 20%;
+  }

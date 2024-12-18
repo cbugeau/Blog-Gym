@@ -4,19 +4,27 @@
   box-sizing: border-box;
 }
 .navbar {
-  position: fixed;
+  position:fixed;
   top: 0;
-  padding: 0;
+  padding: 0px !important; 
+  margin: 0px;
+  margin-bottom: 0px;
 }
 .icono {
   width: 100px;
   margin: 5px;
 }
+.header-contenedor{
+ 
+  padding: 0px;
+}
 .header {
+ 
   background: rgb(123,163,222);
 background: linear-gradient(0deg, rgba(123,163,222,1) 1%, rgba(42,30,138,1) 90%);
   margin: 0px;
   padding: 0;
+  margin-bottom: 0px;
   a {
     margin: 5px;
     margin-top: -5px;
@@ -24,26 +32,31 @@ background: linear-gradient(0deg, rgba(123,163,222,1) 1%, rgba(42,30,138,1) 90%)
     white-space: nowrap;
   }
 }
-.container {
-  margin-top: 10px;
-}
-
-.footer {
+.main{
+  margin-top: 0px;
+  position:relative;
+  padding: 0px !important; 
   background: rgb(42,30,138);
-  background: linear-gradient(0deg, rgba(42,30,138,1) 1%, rgba(123,163,222,1) 90%);
-  margin-top: 30px;
+background: linear-gradient(0deg, rgba(42,30,138,1) 21%, rgba(123,163,222,1) 80%);
+}
+.footer {
+
+  background: rgb(123,163,222);
+background: linear-gradient(0deg, rgba(123,163,222,1) 21%, rgba(42,30,138,1) 80%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;    
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  position:relative;  
   a {
     margin: 10px;
     color: white;
     white-space: nowrap;
   }
 }
+
 
 .footer ul {
   margin: 5px;
@@ -109,6 +122,17 @@ img{
 .container{
   display: grid;
   grid-template-columns: 2fr 0.5fr;
+
+ 
+
+  
+}
+.publicidad{
+  /*border: 2px solid blue; borrar lineas*/
+}
+.cotenido{
+  
+  margin: 10px;
 }
 .boton-ver-mas{
 border-radius: 1%;
@@ -156,7 +180,11 @@ border-radius: 1%;
   }
   .buscador-cat{
     position: fixed;
-    
+    display: none;
+  }
+  .caja-de-comentario{
+
+   display: none;
   }
 }
 .card-imagen{
@@ -164,13 +192,46 @@ border-radius: 1%;
   object-fit: cover;
 }
 .buscador-cat{
-  width: 1000px;
-
+margin-top: 10px;
 }
 .carrusel-publicidad{
-  margin: 10px;
-  position:relative;
-  width: 300px;
-  max-height: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  position:absolute;
+  width: 100%;
+
 }
+
+.carousel-inner {
+img {
+  height: 300px;
+  size-adjust: auto;
+}
+}
+.caja-de-comentario{
+ 
+  textarea{
+    margin-top: 5px;
+    resize: none;
+    width: 100%;
+  }
+  img{
+    width: 20px;
+  }
+  button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+}
+.comentarios{
+  height: 30em;
+  line-height: 1em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  /*border: 1px solid;*/
+}
+
 
