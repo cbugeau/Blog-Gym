@@ -3,6 +3,23 @@
   padding: 0%;
   box-sizing: border-box;
 }
+.btn-estilo {
+  background: rgb(42,30,138) !important;
+  background: linear-gradient(0deg, rgba(42,30,138,1) 21%, rgba(123,163,222,1) 80%) !important;
+  color: white !important;
+  border-color: white !important;
+}
+.text-musculacion{
+  resize: none;
+  overflow-y: scroll;
+  height:500px;
+}
+.caja-de-comentario-musculacion{
+  
+  button{
+    margin-top: 50px;
+  }
+}
 .navbar {
   position:fixed;
   top: 0;
@@ -38,6 +55,10 @@ background: linear-gradient(0deg, rgba(123,163,222,1) 1%, rgba(42,30,138,1) 90%)
   padding: 0px !important; 
   background: rgb(42,30,138);
 background: linear-gradient(0deg, rgba(42,30,138,1) 21%, rgba(123,163,222,1) 80%);
+a{
+  text-decoration: none;
+  color: black;
+}
 }
 .footer {
 
@@ -49,11 +70,16 @@ background: linear-gradient(0deg, rgba(123,163,222,1) 21%, rgba(42,30,138,1) 80%
   padding: 0px;
   width: 100%;
   height: 100%;
-  position:relative;  
+  position:relative;
+    
   a {
     margin: 10px;
     color: white;
     white-space: nowrap;
+  }
+  section{
+    padding-top: 2%;
+    margin-left: 5px;
   }
 }
 
@@ -122,10 +148,6 @@ img{
 .container{
   display: grid;
   grid-template-columns: 2fr 0.5fr;
-
- 
-
-  
 }
 .publicidad{
   /*border: 2px solid blue; borrar lineas*/
@@ -133,6 +155,10 @@ img{
 .cotenido{
   
   margin: 10px;
+ 
+}
+.paginacion{
+  margin-top: 10px;
 }
 .boton-ver-mas{
 border-radius: 1%;
@@ -181,10 +207,19 @@ border-radius: 1%;
   .buscador-cat{
     position: fixed;
     display: none;
+    
+  }
+  .buscador-general{
+    margin-bottom: 10px;
+  
   }
   .caja-de-comentario{
 
    display: none;
+  }
+  .footer{
+    padding-left: 40px;
+   
   }
 }
 .card-imagen{
@@ -199,9 +234,7 @@ margin-top: 10px;
   margin-bottom: 15px;
   position:absolute;
   width: 100%;
-
 }
-
 .carousel-inner {
 img {
   height: 300px;
@@ -209,7 +242,7 @@ img {
 }
 }
 .caja-de-comentario{
- 
+
   textarea{
     margin-top: 5px;
     resize: none;
@@ -231,7 +264,7 @@ img {
   overflow-x: hidden;
   overflow-y: scroll;
   width: 100%;
-  /*border: 1px solid;*/
+ 
 }
 
 

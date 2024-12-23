@@ -6,6 +6,7 @@
     <title>Iniciar</title>
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/musculacion.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -111,97 +112,89 @@
         </div>
       </div>
     </div>
-    <form >
-      <div class="modal fade" data-bs-backdrop="true" id="recuperarclave" tabindex="-1" aria-labelledby="recuperarclave" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Recuperar Clave</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">Ingrese su Email:</label>
-                  <input type="text" class="form-control" id="recipient-name" placeholder="Tugym@gmail.com" required>
-                </div>
-                <div class="mb-3">
-                  <label for="">Se enviara un Link a la casilla de correo ingresada para recuperar su clave <br> luego de presionar el boton Recuperar revise su Email </label>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button submit" class="btn btn-estilo btn-recuperar"  > Recuperar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-            </form>
-           
-      <div class="modal fade" id="linkenviado" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">Mensaje:</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              Por favor revise su casilla en busca del link Enviado
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    
     <main class="main">
-        <div class="formulario-iniciar-sesion">
-            <form >
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Direccion de correo</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" maxlength="40" required>
-                  <div id="emailHelp" class="form-text"></div>
-                </div>
-                
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Clave</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" maxlength="10" required>
-                </div>
-                
-                <div class="Container-botones">
-                    <div class="btn-guardar">
-                        <button type="submit" class="btn btn-estilo" >Ingresar</button>
-                    </div>
-                    <div class="btn-cerrar">
-                        <button type="button" onclick="location.href='../index.html'" class="btn btn-estilo"> salir</button>
-                    </div>
-                    
-                </div> 
-                <div class="link-recuperar-clave">
-                  <a  aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#recuperarclave">Olvide mi Contraseña</a> 
-                </div> 
-              </form>
-              <div class="imagen-login">
-                <div class="logo-login">
-                  <img src="https://i.pinimg.com/originals/9f/9f/bb/9f9fbb3b96703d08b68aaa8c34aba638.png" alt="">
-                </div>
-                <div class="link-log">
-                  <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/185/185981.png" alt="" class="icono-login">Iniciar con Facebook</a>
-                  <a href="https://www.google.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/518/518704.png" alt="" class="icono-login">Iniciar con Google</a>
-                </div>
-                <div class="link-log-responsiv">
-                  <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/185/185981.png" alt="" class="icono-login"></a>
-                  <a href="https://www.google.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/518/518704.png" alt="" class="icono-login"></a>
-                </div>
+    <div class="carrusel-musculacion">
+        <h1>Musculación</h1>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://osakidetza.com.es/wp-content/uploads/2022/05/aumentar-masa-muscular-nutricion.jpg" class="d-block w-100" alt="...">
               </div>
-        </div>
-     <form>
-  
-</form>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-V738LHflEJITkmurYhvBH3W5Lsmwjv56_w&s" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="https://aprende.com/wp-content/uploads/2021/11/alimentos-que-ayudan-a-ganar-masa-muscular-infografia.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div class="contenido-musculacion">
+        <label for="">
+            Cuando las personas se preocupan por el estado físico y la salud suelen pensar en la acumulación excesiva de grasa y peso como uno de los peores problemas que desencadenan el tipo de afecciones y enfermedades más graves. La obesidad es, de hecho, una de las principales preocupaciones de salud pública de nuestro tiempo. Sin embargo, la gente tiende a pasar por alto que la pérdida de masa muscular y la falta de masa muscular son tan peligrosos, si no más, que el exceso de grasa corporal. <br>
+            <br>Los músculos son lo que nos pone en marcha. Literalmente. Nuestros músculos son los motores que nos permiten movernos y liberar energía.
+            <br>
+            <br>
+            El músculo juega un papel clave en el metabolismo de las proteínas de todo el cuerpo, ya que actúa como depósito principal de aminoácidos para mantener la síntesis de proteínas en los tejidos y órganos vitales y proporciona precursores gluconeogénicos hepáticos.
+            <br>
+            <img src="https://rea.ceibal.edu.uy/elp/musculosas-y-musculosos/1007_Muscle_Fibes_(large)_esp....jpg" alt="">
+            <br>
+            Los músculos ganan masa y fuerza gracias a la ingesta de proteínas y la actividad física constante que los mantiene acondicionados para la resistencia y el movimiento. Se ha demostrado que el ejercicio de resistencia al menos tres veces por semana es una de las principales estrategias, junto con una dieta equilibrada, para fortalecer, tonificar y mantener los músculos, incluso si está tratando de perder peso y grasa al mismo tiempo.
+            <br>
+            <br>
+            <img src="https://www.ciudad.com.ar/resizer/v2/arnold-schwarzenegger-fue-mister-universo-conoce-sobre-su-faceta-de-fisicoculturista-OYT37T2O6BAW5F3CC6JFENEVX4.jpg?auth=c641ab01093defc2c8d58007ef49fe54f65eb33c311f57f3f9732ec22d903fc8&width=767" alt="">
+            <br>
+            <br>
+        </label>
+    </div>
+    <div class="Comentarios-musculacion">
+        <form class="caja-de-comentario-musculacion">
+            <h1>Comentar:</h1>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" maxlength="150"></textarea>
+            </div>
+            <button type="button" class="btn btn-estilo" ><img src="https://cdn-icons-png.freepik.com/256/566/566372.png?ga=GA1.1.1959948065.1733925284&semt=ais_hybrid" alt="" class="ico"> Enviar Comentario</button>
+            <div class="comentarios-musc">
+              <table class="table table-dark table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Comentarios:</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><img src="https://cdn-icons-png.flaticon.com/128/1177/1177680.png" alt=""> Christian: <br>Excelente Post, me ayudo mucho con mi entrenamiento </th>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="https://cdn-icons-png.flaticon.com/128/1397/1397210.png" alt=""> Carla: <br>Algun nuctricionista para recomendar? </th>
+                 
+                
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="https://cdn-icons-png.flaticon.com/128/1177/1177680.png" alt=""> Carlos: <br>Gracias por la info. me gustaria que amplien mas sobre  </th>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="https://cdn-icons-png.flaticon.com/128/1397/1397210.png" alt=""> Gloria: <br>Este blog es el mejor al que e ingresado </th>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="https://cdn-icons-png.flaticon.com/128/1177/1177680.png" alt=""> Andres: <br>Este blog es el mejor al que e ingresado </th>
+                  </tr>
+                  
+                </tbody>
+              
+              </table>
+            </div>
+            
+          </form>
+    </div>
     </main>
     <footer class="footer">
       <section class="row logo-principal justify-content-between section-footer">

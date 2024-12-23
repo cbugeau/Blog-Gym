@@ -1,0 +1,53 @@
+.form-contacto{
+    display: grid;
+  grid-template-columns: 1fr 2fr;
+  
+}
+.mapa{
+ 
+ margin-left: 10px;
+    width: 100%;
+    padding: 5px;
+    iframe{
+        width: 100%;
+        height: 60%;
+
+    }
+    
+    
+
+}
+.datos-blog{
+    margin-top: 10px;
+    border: 2px solid white;
+   
+    border-radius: 15px 5px;
+    padding: 10px;
+    label{
+        color: grey;
+    }
+    h1{
+        color: white;
+    }
+}
+.formulario-contacto{
+ 
+    width: 100%;
+    padding: 5px;
+}
+.form-contacto-datos{
+  
+    padding: 20px;
+    border:solid rgb(204, 204, 204);
+    border-radius:50px;
+    width: 80%;
+    margin-left: 10%;
+    label{
+        color: white;
+    }
+    textarea{
+        resize: none;
+        width: 100%;
+    }
+  
+}

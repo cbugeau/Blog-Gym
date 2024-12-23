@@ -1,0 +1,77 @@
+.carrusel-musculacion{
+    img {
+      margin-left: 36%;
+      align-items: center;
+      width: 350px !important;
+      size-adjust: auto;
+    }
+    h1{
+      text-align: center;
+    }
+  }
+  .contenido-musculacion{
+    width: 70%;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 10px;
+    border: solid white;
+    border-radius: 10px;
+    label{
+      color: white;
+    }
+    img{
+      width: 300px;
+      margin-left: 30%;
+      border-radius: 10px;
+    }
+  }
+  .caja-de-comentario-musculacion{
+    width: 80%;
+    align-items: center;
+    margin-left: 10%;
+    textarea{
+      margin-top: 5px;
+      resize: none;
+      width: 100%;
+    }
+    img{
+      width: 35px;
+    }
+    button{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      width: 100%;
+    }
+  
+  }
+  .comentarios-musc{
+    height: 15em;
+    line-height: 1em;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 500px) {
+    
+    .contenido-musculacion{
+        
+        img{
+            width: 200px;
+            margin-left: 20%;
+        }
+    }
+    .carrusel-musculacion{
+        img {
+            margin-left: 15%;
+            align-items: center;
+            width: 350px !important;
+            size-adjust: auto;
+          }
+    }.caja-de-comentario-musculacion{
+    
+        size-adjust: 70%;
+    }
+  }
