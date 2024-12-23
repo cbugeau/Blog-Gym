@@ -60,14 +60,14 @@
         
         img{
             width: 200px;
-            margin-left: 20%;
+            margin-left: 10%;
         }
     }
     .carrusel-musculacion{
         img {
-            margin-left: 15%;
+            margin-left: 10%;
             align-items: center;
-            width: 350px !important;
+            width: 300px !important;
             size-adjust: auto;
           }
     }.caja-de-comentario-musculacion{

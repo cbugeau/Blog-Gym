@@ -150,3 +150,24 @@ a.more-link {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    
 }
+.error{
+  display: none;
+}
+@media (max-width: 1000px)
+{
+  .error-container {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    margin: 20px 15px;
+  }
+  .error{
+    display: block;
+    color: black;
+    font-size: 50px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    
+  }
+}

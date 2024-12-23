@@ -14,12 +14,16 @@
     label{
         color: white;
     }
+    a{
+      color: grey;
+    }
     
 
   }
   .link-recuperar-clave{
     padding-top: 5%;
     margin-left: 30%;
+    
   }
   .Container-botones{
     display: grid;

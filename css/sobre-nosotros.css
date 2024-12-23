@@ -6,8 +6,16 @@
 .container{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
+    
     christian{
-        background-color: red;
+        
+       width: 100px;
+       height: 100px;
+       color: white;
+       border: solid red;
+       label{
+        color: white;
+       }
        
     }
     Carlos{
@@ -17,3 +25,18 @@
         background-color: green;
     }
   }
+  @media (max-width: 500px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .media-form {
+        width: 100%;
+      }
+    
+      .tamanio-tarjeta {
+        width: 100%;
+      }
+  }
+
+  
