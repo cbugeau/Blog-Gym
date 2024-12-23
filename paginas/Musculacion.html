@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/musculacion.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body href="../index.html">
+    <header class="header-contenedor">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid header">
+          <img
+            src="https://media.tenor.com/WJrxtr--PCUAAAAj/workout-gym.gif"
+            alt=""
+            class="icono"
+          />
+          <a class="navbar-brand" href="../index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../paginas/Contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/sobre-nosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ingresar
+                </a>
+                <ul class="dropdown-menu menu-ingresar">
+                  <li><a class="dropdown-item" href="../paginas/iniciar-sesion.html">Iniciar Sesion</a></li>
+                  <li><a class="dropdown-item" href="./registrarse.html">Registrarse</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Salir</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Suscribete</a>
+              </li>
+          
+            </ul>
+            <form class="d-flex buscador-general" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn boton-buscar" type="submit"><a href="./paginas/404.html">Buscar</a></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Suscribirme:</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Nombre:</label>
+                <input type="text" class="form-control" id="recipient-name" required>
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Apellido:</label>
+                <input type="text" class="form-control" id="recipient-name" required>
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="recipient-name" placeholder="Tugym@gmail.com" required>
+              </div>
+              <div class="mb-3">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Recibir Notificaciones por Email</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-estilo" data-bs-toggle="modal" data-bs-target="#Registrocargado"><img src="https://cdn-icons-png.freepik.com/256/566/566372.png?ga=GA1.1.1959948065.1733925284&semt=ais_hybrid" alt="" class="ico"> Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Registrocargado" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Mensaje:</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Los datos se cargaron correctamente!!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+    <div class="carrusel-musculacion">
+        <h1>Musculación</h1>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://osakidetza.com.es/wp-content/uploads/2022/05/aumentar-masa-muscular-nutricion.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-V738LHflEJITkmurYhvBH3W5Lsmwjv56_w&s" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="https://aprende.com/wp-content/uploads/2021/11/alimentos-que-ayudan-a-ganar-masa-muscular-infografia.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div class="contenido-musculacion">
+        <label for="">
+            Cuando las personas se preocupan por el estado físico y la salud suelen pensar en la acumulación excesiva de grasa y peso como uno de los peores problemas que desencadenan el tipo de afecciones y enfermedades más graves. La obesidad es, de hecho, una de las principales preocupaciones de salud pública de nuestro tiempo. Sin embargo, la gente tiende a pasar por alto que la pérdida de masa muscular y la falta de masa muscular son tan peligrosos, si no más, que el exceso de grasa corporal. <br>
+            <br>Los músculos son lo que nos pone en marcha. Literalmente. Nuestros músculos son los motores que nos permiten movernos y liberar energía.
+            <br>
+            <br>
+            El músculo juega un papel clave en el metabolismo de las proteínas de todo el cuerpo, ya que actúa como depósito principal de aminoácidos para mantener la síntesis de proteínas en los tejidos y órganos vitales y proporciona precursores gluconeogénicos hepáticos.
+            <br>
+            <img src="https://rea.ceibal.edu.uy/elp/musculosas-y-musculosos/1007_Muscle_Fibes_(large)_esp....jpg" alt="">
+            <br>
+            Los músculos ganan masa y fuerza gracias a la ingesta de proteínas y la actividad física constante que los mantiene acondicionados para la resistencia y el movimiento. Se ha demostrado que el ejercicio de resistencia al menos tres veces por semana es una de las principales estrategias, junto con una dieta equilibrada, para fortalecer, tonificar y mantener los músculos, incluso si está tratando de perder peso y grasa al mismo tiempo.
+            <br>
+            <br>
+            <img src="https://www.ciudad.com.ar/resizer/v2/arnold-schwarzenegger-fue-mister-universo-conoce-sobre-su-faceta-de-fisicoculturista-OYT37T2O6BAW5F3CC6JFENEVX4.jpg?auth=c641ab01093defc2c8d58007ef49fe54f65eb33c311f57f3f9732ec22d903fc8&width=767" alt="">
+            <br>
+            <br>
+        </label>
+    </div>
+    <div class="Comentarios-musculacion">
+        <form class="caja-de-comentario-musculacion">
+            <h1>Comentar:</h1>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" maxlength="150"></textarea>
+            </div>
+            <button type="button" class="btn btn-estilo" ><img src="https://cdn-icons-png.freepik.com/256/566/566372.png?ga=GA1.1.1959948065.1733925284&semt=ais_hybrid" alt="" class="ico"> Enviar Comentario</button>
+            <div class="comentarios-musc">
+              <table class="table table-dark table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Comentarios:</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><img src="https://cdn-icons-png.flaticon.com/128/1177/1177680.png" alt=""> Christian: <br>Excelente Post, me ayudo mucho con mi entrenamiento </th>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="https://cdn-icons-png.flaticon.com/128/1397/1397210.png" alt=""> Carla: <br>Algun nuctricionista para recomendar? </th>
+                 
+                
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="https://cdn-icons-png.flaticon.com/128/1177/1177680.png" alt=""> Carlos: <br>Gracias por la info. me gustaria que amplien mas sobre  </th>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="https://cdn-icons-png.flaticon.com/128/1397/1397210.png" alt=""> Gloria: <br>Este blog es el mejor al que e ingresado </th>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="https://cdn-icons-png.flaticon.com/128/1177/1177680.png" alt=""> Andres: <br>Este blog es el mejor al que e ingresado </th>
+                  </tr>
+                  
+                </tbody>
+              
+              </table>
+            </div>
+            
+          </form>
+    </div>
+    </main>
+    <footer class="footer">
+      <section class="row logo-principal justify-content-between section-footer">
+        <ul class="navbar-nav col-sm-12 col-md-6 col-lg-3">
+          <img
+            src="https://media.tenor.com/s6RkX1lnFloAAAAj/mog-mogged.gif"
+            alt=""
+            class="icono"
+          />
+        </ul>
+        <ul class="navbar-nav col-sm-12 col-md-6 col-lg-3">
+          <li>
+            <img src="../iconos/facebook.ico" alt="" class="icono-p" /><a href=""
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <img src="../iconos/instagram.ico" alt="" class="icono-p" /><a href=""
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <img src="../iconos/youtube.ico" alt="" class="icono-p" /><a href=""
+              >YouTube</a
+            >
+          </li>
+        </ul>
+        <ul class="navbar-nav col-sm-12 col-md-6 col-lg-3">
+          <li><a href="">Terminos y condiciones</a></li>
+          <li><a href="">Trabaja con nosotros</a></li>
+          <li><a href="">Legales</a></li>
+        </ul>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

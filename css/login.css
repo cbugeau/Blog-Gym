@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  .formulario-iniciar-sesion{
+    display: grid;
+  grid-template-columns: 2fr 1fr;
+    padding: 20px;
+    border:solid rgb(204, 204, 204);
+    border-radius:50px;
+    width: 50%;
+    margin-left: 25%;
+    label{
+        color: white;
+    }
+    
+
+  }
+  .link-recuperar-clave{
+    padding-top: 5%;
+    margin-left: 30%;
+  }
+  .Container-botones{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+   
+  }
+  .btn-guardar{
+    margin-left: 20%;
+  }
+  .btn-cerrar{
+    margin-right: 20%;
+  }
+  .imagen-login{
+    img{
+        width: 50%;
+        margin-left: 30%;
+
+    }
+  }
+  .link-log{
+img{
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    
+}
+a{
+    text-decoration: none;
+  color: white;
+}
+  }
+.link-log-responsiv{
+    display: none;
+}
+  @media (max-width: 700px) {
+    .imagen-login{
+        img{
+            width: 90%;
+            margin-left: 20%;
+            margin-top: 30%;
+    
+        }
+      }
+    
+    .link-log{
+        a{
+            display: none; 
+        }
+       
+        
+    }
+    .link-log-responsiv{
+        display: block;
+        img{
+            width: 20px;
+        }
+    }
+   /* .logo-login{
+        width: 100%;
+        margin-top: 30%;
+        margin-left: 10px; 
+    }*/
+.formulario-iniciar-sesion{
+   width: 290px;
+   margin-left: 10%;
+   object-fit: cover;
+}
+
+}
+
+    .btn-estilo {
+        background: rgb(42,30,138) !important;
+        background: linear-gradient(0deg, rgba(42,30,138,1) 21%, rgba(123,163,222,1) 80%) !important;
+        color: white !important;
+    }
+
+
+/*
+@media (max-width: 900px) {
+    .imagen-login{
+        img{
+            width: 90%;
+            margin-left: 20%;
+            margin-top: 30%;
+    
+        }
+      }
+    
+    .link-log{
+        a{
+            display: none; 
+        }
+       
+        
+    }
+
+.formulario-iniciar-sesion{
+   width: 290px;
+   margin-left: 10%;
+   object-fit: cover;
+}
+
+}*/
